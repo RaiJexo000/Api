@@ -1,0 +1,7 @@
+cat > package.json << 'EOF'
+{
+  "scripts": {
+    "vercel-build": "pip install -r requirements.txt"
+  }
+}
+EOF
