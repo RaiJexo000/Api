@@ -11,11 +11,6 @@ def lookup():
     username = request.args.get('username')
     if not username:
         return jsonify({"error": "Username do"}), 400
-    return jsonify({
-        "status": "success",
-        "username": username,
-        "number": "21211111XX"
-    })
+    return jsonify({"status": "success", "username": username, "number": "21211111XX"})
 
-# Vercel requires this
 app = app
